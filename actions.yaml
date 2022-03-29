@@ -4,8 +4,7 @@ description: >
   commits are signed by authorized users in the Beyond Identity directory.
 inputs:
   api_token:
-    description: >
-      API token for the Beyond Identity key management API. Should be stored as a secret in your repository, and referenced as, e.g.
+    description: > API token for the Beyond Identity key management API.
           api_token: {{ secrets.BYNDID_KEY_MGMT_API_TOKEN }}
 required: true
   ref:

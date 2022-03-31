@@ -42,5 +42,5 @@ verify-signature-with-Beyond-Identity:
         # if that's a release candidate.
         uses: byndid/auth-commit-sig@main
         with:
-          api_token: ${{ secrets.BYNDID_KEY_MGMT_API_TOKEN }}
+          api_token: ${{ secrets.github }}
 

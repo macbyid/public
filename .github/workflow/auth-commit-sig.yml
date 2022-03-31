@@ -22,7 +22,7 @@ verify-signature-with-Beyond-Identity:
       - name: Authorize with Beyond Identity
         uses: byndid/auth-commit-sig@v0
         with:
-          api_token: ${{ secrets.BYNDID_KEY_MGMT_API_TOKEN }}
+          api_token: ${{ secrets.github }}
           
   byndid-auth-commit-sig-latest:
     runs-on: ubuntu-latest

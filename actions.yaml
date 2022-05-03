@@ -5,7 +5,7 @@ description: >
 inputs:
   api_token:
     description: > API token for the Beyond Identity key management API.
-          api_token: {{ secrets.github}}
+          api_token: {{ secrets.mainbranch}}
 required: true
   ref:
     description: >

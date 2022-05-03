@@ -1,7 +1,7 @@
 name: Authorize Commit Signing
 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push or pull request events but only for the main branch (junk)
   push:
     branches: [ main ]
   pull_request:
@@ -25,7 +25,7 @@ jobs:
       - name: Authorize with Beyond Identity
         uses: byndid/auth-commit-sig@v0
         with:
-          api_token: ${{ secrets.protonmain }}
+          api_token: ${{ secrets.mainbranch }}
           
   byndid-auth-commit-sig-latest:
     runs-on: ubuntu-latest
@@ -45,4 +45,4 @@ jobs:
         # if that's a release candidate.
         uses: byndid/auth-commit-sig@main
         with:
-          api_token: ${{ secrets.protonmain }}
+          api_token: ${{ secrets.mainbranch }}

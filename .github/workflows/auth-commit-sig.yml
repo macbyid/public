@@ -23,7 +23,7 @@ verify-signature-with-Beyond-Identity:
         with:
           api_token: ${{ secrets.mainbranch }}
           
-  byndid-auth-commit-sig-latest:
+byndid-auth-commit-sig-latest:
     runs-on: ubuntu-latest
     steps:
       - name: Check out pull request

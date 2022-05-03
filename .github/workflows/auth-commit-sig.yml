@@ -1,6 +1,6 @@
 name: Authorize Commit Signing
 
-on: Condition that triggers pipeline job verify signature with Beyond identity
+on: #Condition that triggers pipeline job verify signature with Beyond identity
   pull_request:
     branches: [main]
 
